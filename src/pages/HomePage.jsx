@@ -21,21 +21,11 @@ const HomePage = () => {
     <>
       <div className="min-h-screen  text-white">
         <Navbar />
-
-        {/* Hero Section */}
         <Home />
-
         <TrustedBy />
-
-        {/* Services Section */}
         <Services />
-
-        {/* About Section */}
         <AboutUs />
-
-        {/* CTA Section */}
         <CTA />
-
         <Footer />
       </div>
     </>

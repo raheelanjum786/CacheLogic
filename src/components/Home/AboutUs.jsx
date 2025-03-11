@@ -21,15 +21,14 @@ const AboutUs = () => {
               Why CacheLogic?
             </h2>
 
-            {/* FIX: Making it a 2x2 grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-20">
               {features.map((feature, index) => (
                 <FeaturePoint
                   key={feature.title}
                   icon={feature.icon}
                   title={feature.title}
-                  showBottomBorder={index < 2} // Bottom border for top row
-                  showRightBorder={index % 2 === 0} // Right border for left column
+                  showBottomBorder={index < 2}
+                  showRightBorder={index % 2 === 0}
                 />
               ))}
             </div>

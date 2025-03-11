@@ -3,28 +3,24 @@ import { Search } from "lucide-react";
 const Service = () => {
   const services = [
     {
-      // icon: <Code2 className="h-8 w-8" />,
       icon: "/svgs/ai-ml.svg",
       title: "Custom Software Development",
       description:
         "From concept to code, our bespoke software solutions are crafted to fit your specific needs, enabling innovation and efficiency at every step.",
     },
     {
-      // icon: <Shield className="h-8 w-8" />,
       icon: "/svgs/advanceDevOps.svg",
       title: "Advanced DevOps & DevSecOps",
       description:
         "Accelerate your development cycles and ensure robust security with our integrated DevOps and DevSecOps practices that minimize downtime and maximize performance.",
     },
     {
-      // icon: <Brain className="h-8 w-8" />,
       icon: "/svgs/aiLearning.svg",
       title: "AI & Machine Learning Solutions",
       description:
         "Harness the power of data with AI algorithms designed to optimize operations, enhance decision-making, and revolutionize customer experiences.",
     },
     {
-      // icon: <Cloud className="h-8 w-8" />,
       icon: "/svgs/cloud.svg",
       title: "Cloud Strategy & Migration",
       description:
@@ -37,28 +33,24 @@ const Service = () => {
         "Protect your assets and data with state-of-the-art security systems and risk management protocols tailored to your business's unique vulnerabilities.",
     },
     {
-      // icon: <Wifi className="h-8 w-8" />,
       icon: "/svgs/devops.svg",
       title: "IoT Solutions",
       description:
         "Connect and scale your devices seamlessly with our IoT services that enhance data collection and analytics, improving operational efficiency and innovation.",
     },
     {
-      // icon: <Blocks className="h-8 w-8" />,
       icon: "/svgs/blockchain.svg",
       title: "Blockchain Development",
       description:
         "Implement secure, decentralized technologies for transactions and data storage that enhance transparency and trust across operations.",
     },
     {
-      // icon: <LayoutGrid className="h-8 w-8" />,
       icon: "/svgs/erpCrm.svg",
       title: "ERP & CRM Implementation",
       description:
         "Integrate powerful ERP and CRM systems that improve workflow efficiency, enhance customer relationships, and drive business growth.",
     },
     {
-      // icon: <Target className="h-8 w-8" />,
       icon: "/svgs/digitalMarketing.svg",
       title: "Digital Marketing",
       description:

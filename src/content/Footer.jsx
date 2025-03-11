@@ -9,7 +9,6 @@ const Footer = () => {
         />
       </div> */}
       <div className="relative z-10 container mx-auto px-6 md:px-12 lg:px-20 flex flex-col md:flex-row justify-between items-center md:items-start space-y-8 md:space-y-0 ">
-        {/* Brand Info */}
         <div className="text-center md:text-left w-full md:w-1/3 pr-10">
           <img src="/svgs/Logo.svg" alt="Logo" />
           <p className="mt-2 text-gray-100">
@@ -18,7 +17,6 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Useful Links */}
         <div className="w-full md:w-1/3 flex flex-col items-center md:items-start space-y-3">
           <h3 className="text-lg font-semibold text-white">Quick Links</h3>
           {[
@@ -39,7 +37,6 @@ const Footer = () => {
           ))}
         </div>
 
-        {/* Social Media */}
         <div className="w-full md:w-1/3 flex justify-center md:justify-end space-x-4">
           {["facebook", "twitter", "linkedin"].map((platform, index) => (
             <a
