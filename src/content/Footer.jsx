@@ -1,7 +1,14 @@
 const Footer = () => {
   return (
-    <footer className="b text-gray-300 py-10 mt-10">
-      <div className="container mx-auto px-6 md:px-12 lg:px-20 flex flex-col md:flex-row justify-between items-center md:items-start space-y-8 md:space-y-0">
+    <footer className="relative text-gray-300 py-10 bg-[#020817]">
+      {/* <div className="absolute inset-0 z-0">
+        <img
+          src="/svgs/pseudo.svg"
+          alt="Footer"
+          className="w-full p object-cover"
+        />
+      </div> */}
+      <div className="relative z-10 container mx-auto px-6 md:px-12 lg:px-20 flex flex-col md:flex-row justify-between items-center md:items-start space-y-8 md:space-y-0 ">
         {/* Brand Info */}
         <div className="text-center md:text-left w-full md:w-1/3 pr-10">
           <img src="/svgs/Logo.svg" alt="Logo" />
@@ -52,8 +59,8 @@ const Footer = () => {
           ))}
         </div>
       </div>
-      <hr className="mt-12 mx-12" />
-      <div className="text-center text-gray-100 text-sm mt-8">
+      <hr className="mt-12 mx-12 relative z-10" />
+      <div className="relative z-10 text-center text-gray-100 text-sm mt-8">
         &copy; 2025 - All Rights Reserved CacheLogic.
       </div>
     </footer>

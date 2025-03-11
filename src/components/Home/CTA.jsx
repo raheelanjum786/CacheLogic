@@ -1,7 +1,10 @@
 const CTA = () => {
   return (
-    <section className="min-h-screen p-10 bg-slate-400 text-white text-center flex items-center justify-center ">
-      <div className="w-full bg-gray-300 h-auto rounded-lg shadow-md mx-32 p-10 md:p-10 lg:p-20 xl:p-30">
+    <section
+      className="min-h-screen p-10 bg-[#020817]
+     text-white text-center flex items-center justify-center "
+    >
+      <div className="w-full bg-[#020817] border-gray-600 border-2 h-auto rounded-3xl shadow-md mx-32 p-10 md:p-10 lg:p-20 xl:p-30">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
           Ready to Transform Your Business?
         </h1>

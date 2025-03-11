@@ -1,45 +1,51 @@
+import { Award, Globe, Headphones, Target } from "lucide-react";
+import FeaturePoint from "../../content/FeaturePoint";
+
 const AboutUs = () => {
+  const features = [
+    { icon: Target, title: "Tailored solutions for every industry" },
+    { icon: Globe, title: "Global reach with localized expertise" },
+    { icon: Award, title: "Proven track record in innovation and growth" },
+    { icon: Headphones, title: "Dedicated support to drive your success" },
+  ];
+
   return (
-    <div>
-      {" "}
-      <section id="about" className="py-16 bg-gray-800">
-        <div className="flex justify-center items-center h-screen mx-4 md:mx-32">
-          <div className="w-full md:w-1/2">
-            <h1 className="bg-blue-500 w-full md:w-32 px-6 py-3 rounded my-6">
+    <section className="py-20 px-4 bg-[#020817]" id="about">
+      <div className="max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <span className="text-[#3B82F6] text-sm font-semibold">
               About Us
-            </h1>
-            <h2 className="text-3xl font-bold">
-              Why <span className="text-blue-400">CacheLogic?</span>
+            </span>
+            <h2 className="text-4xl font-bold mt-2 mb-8 text-white">
+              Why CacheLogic?
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 mt-8">
-              <div className="p-6 rounded">
-                Tailored solutions for every industry.
-              </div>
-              <div className="p-6 rounded">
-                Global reach with localized expertise.
-              </div>
-              <div className="p-6 rounded">
-                Proven track record in innovation.
-              </div>
-              <div className="p-6 rounded">
-                Dedicated support for your success.
-              </div>
+
+            {/* FIX: Making it a 2x2 grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-20">
+              {features.map((feature, index) => (
+                <FeaturePoint
+                  key={feature.title}
+                  icon={feature.icon}
+                  title={feature.title}
+                  showBottomBorder={index < 2} // Bottom border for top row
+                  showRightBorder={index % 2 === 0} // Right border for left column
+                />
+              ))}
             </div>
-            <button className="bg-blue-500 px-6 py-3 rounded mt-6 w-full md:w-1/2">
+
+            <button className="mt-8 border border-gray-600 px-6 py-3 rounded-lg hover:bg-gray-800 transition text-white">
               Read Our Story
             </button>
           </div>
-          <div className="w-full md:w-1/2">
-            <img
-              src="svgs/PuzzlePeople.svg"
-              alt=""
-              srcset=""
-              className="w-full"
-            />
+
+          <div className="relative">
+            <img src="/svgs/PuzzlePeople.svg" alt="Team collaboration" />
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 };
+
 export default AboutUs;

@@ -1,73 +1,66 @@
+import ServiceCard from "../../content/ServiceCard";
+
 const Services = () => {
+  const services = [
+    {
+      icon: "/svgs/ai-ml.svg",
+      title: "AI/ML",
+      description: "Revolutionizing decisions through intelligent solutions",
+    },
+    {
+      icon: "/svgs/automation.svg",
+      title: "Automation",
+      description: "Streamlining processes to enhance efficiency",
+    },
+    {
+      icon: "/svgs/cybersecurity.svg",
+      title: "Cybersecurity",
+      description: "Fortifying your business against evolving threats",
+    },
+    {
+      icon: "/svgs/webApp.svg",
+      title: "Web & Mobile Apps",
+      description: "Crafting seamless digital experiences",
+    },
+    {
+      icon: "/svgs/custom.svg",
+      title: "Custom Solutions",
+      description: "Tailored tech built just for you",
+    },
+    {
+      icon: "/svgs/devops.svg",
+      title: "Dev Ops",
+      description: "Optimizing development and deployment pipelines",
+    },
+  ];
   return (
-    <section id="services" className="p-10 bg-gray-900 text-white">
-      <h2 className="text-3xl font-bold text-center">
-        Our Popular <span className="text-blue-400">Services.</span>
-      </h2>
-      <div className="grid md:grid-cols-3 gap-6 mt-6">
-        <div className="p-6 bg-gray-800 rounded-lg">
-          <img src="/icon-ai.svg" alt="AI/ML Icon" className="w-10 h-10 mb-4" />
-          <h3 className="text-xl font-semibold">AI/ML</h3>
-          <p className="mt-2 text-gray-400">
-            Revolutionizing decisions through intelligent solutions.
-          </p>
+    <section className="py-20 px-4 bg-[#020817]" id="services">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-16">
+          <span className="text-[#3B82F6] text-sm font-semibold py-2 px-6 border rounded-xl">
+            Why Us
+          </span>
+          <h2 className="text-4xl font-bold mt-4">
+            Our Popular <span className="text-[#3B82F6]">Services</span>.
+          </h2>
         </div>
-        <div className="p-6 bg-gray-800 rounded-lg">
-          <img
-            src="/icon-automation.svg"
-            alt="Automation Icon"
-            className="w-10 h-10 mb-4"
-          />
-          <h3 className="text-xl font-semibold">Automation</h3>
-          <p className="mt-2 text-gray-400">
-            Streamlining processes to enhance efficiency.
-          </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {services.map((service) => (
+            <ServiceCard
+              key={service.title}
+              icon={service.icon}
+              title={service.title}
+              description={service.description}
+            />
+          ))}
         </div>
-        <div className="p-6 bg-gray-800 rounded-lg">
-          <img
-            src="/icon-cybersecurity.svg"
-            alt="Cybersecurity Icon"
-            className="w-10 h-10 mb-4"
-          />
-          <h3 className="text-xl font-semibold">Cybersecurity</h3>
-          <p className="mt-2 text-gray-400">
-            Fortifying your business against evolving threats.
-          </p>
+
+        <div className="text-center mt-12">
+          <button className="border border-gray-600 px-6 py-3 rounded-lg hover:bg-gray-800 transition">
+            Explore All Services
+          </button>
         </div>
-        <div className="p-6 bg-gray-800 rounded-lg">
-          <img
-            src="/icon-cybersecurity.svg"
-            alt="Cybersecurity Icon"
-            className="w-10 h-10 mb-4"
-          />
-          <h3 className="text-xl font-semibold">Cybersecurity</h3>
-          <p className="mt-2 text-gray-400">
-            Fortifying your business against evolving threats.
-          </p>
-        </div>
-        <div className="p-6 bg-gray-800 rounded-lg">
-          <img
-            src="/icon-cybersecurity.svg"
-            alt="Cybersecurity Icon"
-            className="w-10 h-10 mb-4"
-          />
-          <h3 className="text-xl font-semibold">Cybersecurity</h3>
-          <p className="mt-2 text-gray-400">
-            Fortifying your business against evolving threats.
-          </p>
-        </div>
-        <div className="p-6 bg-gray-800 rounded-lg">
-          <img
-            src="/icon-cybersecurity.svg"
-            alt="Cybersecurity Icon"
-            className="w-10 h-10 mb-4"
-          />
-          <h3 className="text-xl font-semibold">Dev Ops</h3>
-          <p className="mt-2 text-gray-400">
-            Optimizing development and deployement pipelines.
-          </p>
-        </div>
-        <button>Explore All Services</button>
       </div>
     </section>
   );

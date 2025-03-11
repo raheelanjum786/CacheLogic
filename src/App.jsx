@@ -1,14 +1,15 @@
-import Footer from "./content/Footer";
-import Navbar from "./content/Navbar";
 import HomePage from "./pages/HomePage";
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ServicePage from "./pages/ServicePage";
 const App = () => {
   return (
-    <div className="bg-blue-950">
-      <Navbar />
-      <HomePage />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/services" element={<ServicePage />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
+
 export default App;
