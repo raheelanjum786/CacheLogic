@@ -10,7 +10,7 @@ export default function TrustedBy() {
 
   return (
     <div className="py-8">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-6xl bg-[#020817] mx-auto px-4">
         <p className="text-center text-gray-500 mb-8">
           Trusted by leading companies
         </p>
