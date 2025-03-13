@@ -12,7 +12,11 @@ const Home = () => {
         <h1 className="text-5xl md:text-6xl font-bold mb-6">
           Fast-Tracking
           <br />
-          Your <span className="text-[#3B82F6]">IT Evolution</span>.
+          Your{" "}
+          <span className="bg-gradient-to-r from-[#1AB5E9] via-[#23AAEB] via-[#4382F3] to-[#4F73F6] text-transparent bg-clip-text">
+            IT Evolution
+          </span>
+          .
         </h1>
         <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
           Empowering businesses with cutting-edge technology and tailored

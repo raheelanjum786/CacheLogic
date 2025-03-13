@@ -9,7 +9,10 @@ const ContactUs = () => {
             Contact Us
           </button>
           <h1 className="text-3xl md:text-5xl md:pr-48">
-            Connect with Our <span className="text-blue-400">Team Today.</span>
+            Connect with Our{" "}
+            <span className="bg-gradient-to-r from-[#1AB5E9] via-[#23AAEB] via-[#4382F3] to-[#4F73F6] text-transparent bg-clip-text">
+              Team Today.
+            </span>
           </h1>
           <p className="md:pr-60">
             We're here to answer your questions and explore new opportunities
