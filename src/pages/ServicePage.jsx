@@ -1,4 +1,3 @@
-import AiSolutions from "../content/AiSolutions";
 import Service from "../components/Services/Service";
 import Footer from "../content/Footer";
 import Navbar from "../content/Navbar";
@@ -9,7 +8,6 @@ const ServicePage = () => {
       {" "}
       <Navbar />
       <Service />
-      <AiSolutions />
       <Footer />
     </div>
   );

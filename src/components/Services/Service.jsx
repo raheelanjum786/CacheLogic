@@ -1,6 +1,6 @@
 import ServiceCard from "../../content/ServiceCard";
 import { Search } from "lucide-react";
-
+import { AiSolutions } from "../";
 const Service = () => {
   const services = [
     {
@@ -60,36 +60,39 @@ const Service = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-[#020817]" id="services">
-      <div className="max-w-6xl mx-auto">
-        <div className="flex px-6 py-2 align-middle items-center justify-start border-2 rounded-xl w-full sm:w-40 mt-12">
-          <Search className="w-4 h-4 mr-2 text-white" />
-          <span className="text-[#3B82F6] text-sm font-semibold">
-            Our Services
-          </span>
+    <>
+      <section className="py-20 px-4 bg-[#020817]" id="services">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex px-6 py-2 align-middle items-center justify-start border-2 rounded-xl w-full sm:w-40 mt-12">
+            <Search className="w-4 h-4 mr-2 text-white" />
+            <span className="text-[#3B82F6] text-sm font-semibold">
+              Our Services
+            </span>
+          </div>
+          <div className="flex flex-col md:flex-row justify-between py-12">
+            <h1 className="text-4xl text-white mb-4 md:mb-0">
+              Empower Your Business with Cutting Edge{" "}
+              <span className="text-blue-600 font-bold">IT Solutions</span>.
+            </h1>
+            <p className="text-lg text-white text-right">
+              Explore our full site of services tailored to meet the unique
+              challenges of your industry.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {services.map((service) => (
+              <ServiceCard
+                key={service.title}
+                icon={service.icon}
+                title={service.title}
+                description={service.description}
+              />
+            ))}
+          </div>
         </div>
-        <div className="flex flex-col md:flex-row justify-between py-12">
-          <h1 className="text-4xl text-white mb-4 md:mb-0">
-            Empower Your Business with Cutting Edge{" "}
-            <span className="text-blue-600 font-bold">IT Solutions</span>.
-          </h1>
-          <p className="text-lg text-white text-right">
-            Explore our full site of services tailored to meet the unique
-            challenges of your industry.
-          </p>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map((service) => (
-            <ServiceCard
-              key={service.title}
-              icon={service.icon}
-              title={service.title}
-              description={service.description}
-            />
-          ))}
-        </div>
-      </div>
-    </section>
+      </section>
+      <AiSolutions />
+    </>
   );
 };
 
